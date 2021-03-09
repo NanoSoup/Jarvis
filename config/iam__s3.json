@@ -1,0 +1,30 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Jarvis0",
+      "Effect": "Allow",
+      "Action": [
+        "s3:CreateBucket",
+        "s3:DeleteObject"
+      ],
+      "Resource": [
+        "arn:aws:s3:::%1$s",
+        "arn:aws:s3:::%1$s/*"
+      ]
+    },
+    {
+      "Sid": "Jarvis1",
+      "Effect": "Allow",
+      "Action": [
+        "s3:Get*",
+        "s3:List*",
+        "s3:Put*"
+      ],
+      "Resource": [
+        "arn:aws:s3:::%1$s",
+        "arn:aws:s3:::%1$s/*"
+      ]
+    }
+  ]
+}

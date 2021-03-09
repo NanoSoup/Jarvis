@@ -1,0 +1,15 @@
+{
+    "require": {
+        "symfony/console": "^5.1",
+        "aws/aws-sdk-php-resources": "^0.3.0",
+        "ext-json": "*",
+      "ext-pdo": "*",
+      "hackzilla/password-generator": "^1.4",
+      "twig/twig": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "CMD\\": "Commands/"
+        }
+    }
+}
